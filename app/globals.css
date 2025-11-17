@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+
+@import "bootstrap-icons/font/bootstrap-icons.css";
+@import 'remixicon/fonts/remixicon.css';
+
+:root {
+  --prim-color: #0ea5ea;
+  --prim-light: #a9baf989;
+  --body-color: #0f172a;
+  --bg-color: #131c31;
+  --light-border: rgba(131 , 131, 131 , 0.3);
+  --prim-gradient: linear-gradient(90deg, rgb(14, 165, 234), rgb(11, 209, 209) 51%, rgb(14, 165, 234)) var(--x, 0) / 200%;
+  --prim-text-gradient: linear-gradient(90deg, rgb(47, 193, 255), rgb(3, 255, 217) 31%, rgb(14, 165, 234)) var(--x, 0) / 200%;
+
+  --white: #fff;
+  --black: #000;
+  --text-light: rgb(170 , 170 ,170);
+  --text: #fff;
+
+  --notoserif: "Noto Sans", sans-serif;
+  --Merienda: "Merienda", cursive;
+  
+  --transition-regular: 0.4s;
+  --transition-slow: 6.5s;
+}
+
+html.light{
+  --prim-color: #00a2ff;
+  --prim-light: #dbeafe;
+  --body-color: #e8edf1;
+  --bg-color: #ffffff;
+  --light-border: #0ea5ea;
+  --white: #000;
+  --black: #fff;
+  --text-light: rgb(0, 0, 0);
+  --text: #344161;
+
+}
+
+.Merienda{
+  font-family: var(--Merienda);
+}
+
+.Notoserif{
+  font-family: var(--notoserif);
+}
+
+body,
+html,
+*{
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+*{
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: var(--body-color);
+  color: var(--white);
+  overflow-x: hidden;
+}
