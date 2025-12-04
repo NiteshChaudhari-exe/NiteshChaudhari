@@ -1,13 +1,23 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Merienda, Noto_Sans } from "next/font/google";
+import { Geist, Geist_Mono, Merienda, Noto_Sans, Unbounded } from "next/font/google";
 import "./globals.css";
 import Navbar from "./Components/Navbar/Navbar";
+import Footer from "./Components/Footer/Footer";
+import ClientLayoutWrapper from "./Components/ClientLayoutWrapper";
 
 const notoserif = Noto_Sans({
   variable: "--font-notoserif",
   subsets: ["latin"],
   display: "swap",
 });
+
+
+const unbounded = Unbounded({
+  variable: "--font-unbounded",
+  subsets: ["latin"],
+  display: "swap",
+});
+
 
 const merienda = Merienda({
   variable: "--font-merienda",
@@ -41,8 +51,11 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${notoserif.variable} ${merienda.variable} `}
       >
+        
         <Navbar/>
         {children}
+        <Footer/>
+      
       </body>
     </html>
   );

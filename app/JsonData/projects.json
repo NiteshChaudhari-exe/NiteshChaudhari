@@ -1,0 +1,38 @@
+[
+{
+    "id":"1",
+    "img":"/project-1.webp",
+    "title":"Flyer Design",
+    "desc":"A modern flyer design for a music event."
+},
+{
+    "id":"2",
+    "img":"/project-2.webp",
+    "title":"Mobile App UI",
+    "desc":"A sleek mobile app user interface design."
+},
+{
+    "id":"3",
+    "img":"/project-3.webp",
+    "title":"Website Redesign",
+    "desc":"A complete redesign of a corporate website."
+},
+{
+    "id":"4",
+    "img":"/project-4.webp",
+    "title":"E-commerce Platform",
+    "desc":"An e-commerce platform for online shopping."
+},
+{
+    "id":"5",
+    "img":"/project-5.webp",
+    "title":"Social Media Campaign",
+    "desc":"A creative social media marketing campaign."
+},
+{
+    "id":"6",
+    "img":"/project-1.webp",
+    "title":"Logo Design",
+    "desc":"A unique logo design for a startup company."
+}
+]

@@ -1,0 +1,73 @@
+[
+    {
+        "Id": "Rp1",
+        "title": "Place For Certifications And Courses",
+        "pere": "Small description about the certificates goes here.",
+        "subtag": "Certifications",
+        "tags": [
+            "JavaScript"
+             
+              
+            ],
+        "time": "8 min read",
+        "date": "2024-06-15",
+        "image": "/Recent-posts1.webp",
+        "secondimage": "/mini-Recent-posts1.webp"
+    },
+    {
+        "Id": "Rp2",
+        "title": "Place For Open Source Contributions",
+        "pere": "Small description about open source contributions goes here.",
+        "subtag": "Open Source",
+        "tags": [
+            "GitHub"              
+            ],
+        "time": "10 min read",
+        "date": "2024-06-10",
+        "image": "/Recent-posts2.webp",
+        "secondimage": "/mini-Recent-posts2.webp"
+    },
+    {
+        "Id": "Rp3",
+        "title": "Place For Technical Blogs",
+        "pere": "Small description about technical blogs goes here.",
+        "subtag": "Blogs",
+        "tags": [
+            "Tech"
+              
+            ],
+        "time": "6 min read",
+        "date": "2024-06-05",
+        "image": "/Recent-posts3.webp",
+        "secondimage": "/mini-Recent-posts3.webp"
+    },
+    {
+        "Id": "Rp4",
+        "title": "Place For Project Showcases",
+        "pere": "Small description about project showcases goes here.",
+        "subtag": "Projects",
+        "tags": [
+            "Portfolio"
+             
+              
+            ],
+        "time": "12 min read",
+        "date": "2024-06-01",
+        "image": "/Recent-posts4.webp",
+        "secondimage": "/mini-Recent-posts4.webp"
+    },
+    {
+        "Id": "Rp5",
+        "title": "Place For Tech Tutorials",
+        "pere": "Small description about tech tutorials goes here.",
+        "subtag": "Tutorials",
+        "tags": [
+            "Learning"
+             ],
+        "time": "15 min read",
+        "date": "2024-05-28",
+        "image": "/Recent-posts5.webp",
+        "secondimage": "/mini-Recent-posts5.webp"
+    }
+]
+   

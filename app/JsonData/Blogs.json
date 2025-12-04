@@ -1,0 +1,100 @@
+[
+    {
+        "id": 1,
+        "title": "Understanding React Hooks",
+        "tag": "Fitness",
+        "time": "8 min ",
+        "name": "Nitesh Chaudhari",
+        "date": "2024-06-15",
+        "image": "/highly-rated-articles1.webp",
+        "author": "/author1.webp",
+        "desc": "An introduction to React Hooks and how to use them effectively.",
+        "desc2":"Learn about the new features and improvements in Next.js 13."
+            
+    },
+    {
+        "id": 2,
+        "title": "A Guide to Next.js 13",
+        "tag": "Travel",
+        "time": "10 min ",
+        "name": "Nitesh Chaudhari",
+        "date": "2024-06-10",
+        "image": "/highly-rated-articles2.webp",
+        "author": "/author2.webp",
+        "desc": "Learn about the new features and improvements in Next.js 13.",
+        "desc2": "An introduction to React Hooks and how to use them effectively."
+    },
+    {
+        "id": 3,
+        "title": "Styling in Tailwind CSS",
+        "tag": "Tailwind CSS",
+        "time": "7 min ",
+        "name": "Nitesh Chaudhari",
+        "date": "2024-06-05",
+        "image": "/highly-rated-articles3.webp",
+        "author": "/author3.webp",
+        "desc": "An in-depth look at styling components using Tailwind CSS.",
+        "desc2": "An introduction to React Hooks and how to use them effectively."
+    },
+    {
+        "id": 4,
+        "title": "Building Responsive UIs",
+        "tag": "CSS",
+        "time": "9 min ",
+        "name": "Nitesh Chaudhari",
+        "date": "2024-06-01",
+        "image": "/highly-rated-articles4.webp",
+        "author": "/author4.webp",
+        "desc": "Techniques and best practices for building responsive user interfaces.",
+        "desc2": "An introduction to React Hooks and how to use them effectively."
+    },
+    {
+        "id": 5,
+        "title": "State Management ",
+        "tag": "Redux",
+        "time": "11 min ",
+        "name": "Nitesh Chaudhari",
+        "date": "2024-05-28",
+        "image": "/highly-rated-articles5.webp",
+        "author": "/author5.webp",
+        "desc": "An overview of state management using Redux in React applications.",
+        "desc2": "An introduction to React Hooks and how to use them effectively."
+    },
+    
+    {
+        "id": 6,
+        "title": "Optimizing Web Performance",
+        "tag": "Performance",
+        "time": "12 min ",
+        "name": "Nitesh Chaudhari",
+        "date": "2024-05-20",
+        "image": "/highly-rated-articles6.webp",
+        "author": "/author6.webp",
+        "desc": "Tips and strategies for improving web application performance.",
+        "desc2": "An introduction to React Hooks and how to use them effectively."
+    },
+    {
+        "id": 7,
+        "title": "Getting Started with TypeScript",
+        "tag": "TypeScript",
+        "time": "8 min ",
+        "name": "Nitesh Chaudhari",
+        "date": "2024-05-15",
+        "image": "/highly-rated-articles7.webp",
+        "author": "/author7.webp",
+        "desc": "A beginner's guide to using TypeScript in web development.",
+        "desc2": "An introduction to React Hooks and how to use them effectively."
+    },
+    {
+        "id": 8,
+        "title": "Deploying Applications with Vercel",
+        "tag": "Vercel",
+        "time": "6 min ",
+        "name": "Nitesh Chaudhari",
+        "date": "2024-05-10",
+        "image": "/highly-rated-articles8.webp",
+        "author": "/author8.webp",
+        "desc": "A step-by-step guide to deploying web applications using Vercel.",
+        "desc2": "An introduction to React Hooks and how to use them effectively."
+    }
+]
