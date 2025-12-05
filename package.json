@@ -2,6 +2,11 @@
   "name": "niteshchaudhari",
   "version": "0.1.0",
   "private": true,
+  "description": "Modern, responsive portfolio built with Next.js showcasing projects and blog posts",
+  "engines": {
+    "node": ">=20.9.0",
+    "npm": ">=10.0.0"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",

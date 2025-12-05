@@ -1,8 +1,8 @@
 # Nitesh Chaudhari — Portfolio
 
-Modern, responsive portfolio built with Next.js (App Router) showcasing projects, blogs and contact information.
+Modern, responsive portfolio built with Next.js (App Router) showcasing projects, blogs, and contact information.
 
-**Live demo**: (deploy to Vercel or run locally; see `Deployment` below)
+**Status:** ✅ Production-Ready for Deployment
 
 **Badges:**
 
@@ -29,26 +29,35 @@ Modern, responsive portfolio built with Next.js (App Router) showcasing projects
 - CSS / PostCSS
 - Optional: TypeScript
 
-## Quick Start
+## 🚀 Quick Start (Local Development)
 
-Prerequisites: `Node.js` 16+ and `npm` (or `pnpm`/`yarn`).
+### Prerequisites
+- **Node.js** ≥20.9.0 (required for Next.js 16)
+- **npm** ≥10.0.0
 
-Open a terminal (PowerShell) and run:
+### Installation & Run
 
 ```powershell
+# Navigate to project
 cd C:\Users\chaud\OneDrive\Desktop\PORTFOLIO\niteshchaudhari1
+
+# Install dependencies
 npm install
+
+# Start development server
 npm run dev
 ```
 
-Then open `http://localhost:3000` in your browser.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-Available scripts (from `package.json`):
+### Available Scripts
 
-- `npm run dev` — run development server
-- `npm run build` — build production app
-- `npm start` — run production server after build
-- `npm run lint` — run linter (if configured)
+```powershell
+npm run dev      # Start dev server (hot reload enabled)
+npm run build    # Build for production
+npm start        # Run production build
+npm run lint     # Run ESLint checks
+```
 
 
 
@@ -60,79 +69,96 @@ Highlights of the repository layout:
 - `JsonData/` — sample data files: `Blogs.json`, `projects.json`, `RecentPosts.json`
 - `public/` — static assets and images (`public/logos/` available)
 
-## Content & Data
+## 📝 Content Management
 
-- This portfolio uses static JSON files in `JsonData/` for blogs, projects and recent posts. Edit those JSON files to update content quickly.
+All portfolio content is stored as JSON for easy updates:
 
-## Deployment
+- **`JsonData/projects.json`** — Project showcase items
+- **`JsonData/Blogs.json`** — Blog posts list
+- **`JsonData/RecentPosts.json`** — Recent posts widget
 
-Recommended: Deploy to Vercel for the best Next.js experience.
+Edit these JSON files to update content without changing code.
 
-1. Push your repo to GitHub.
-2. Import the repo into Vercel and follow the prompts.
+## 🌐 Deployment
 
-Alternatively build and run locally (PowerShell):
+### ✅ **Recommended: Vercel** (One-Click Deploy)
+
+**Steps:**
+
+1. **Push to GitHub**
+   ```powershell
+   git add .
+   git commit -m "Ready for production"
+   git push origin main
+   ```
+
+2. **Connect to Vercel**
+   - Go to [vercel.com](https://vercel.com)
+   - Click "New Project"
+   - Import your GitHub repository
+   - Vercel auto-detects Next.js
+   - Click "Deploy"
+
+3. **Environment Variables (if needed)**
+   - Copy values from `.env.example` to Vercel dashboard
+   - Redeploy after adding env vars
+
+4. **Custom Domain (Optional)**
+   - Add domain in Vercel project settings
+   - Update DNS records as instructed
+
+### Alternative: Netlify / Self-Hosted
+
+**Netlify:**
+- Import repository
+- Build: `npm run build`
+- Publish: `.next`
+
+**Local Production Build:**
 
 ```powershell
 npm run build
 npm start
 ```
 
-## Contributing
+## 📊 Pre-Deployment Checklist
 
-- Feel free to open issues or PRs with improvements. Keep changes focused and include screenshots or descriptions for UI updates.
+Before deploying to production:
 
-## License
+- ✅ Node.js ≥20.9.0 installed locally
+- ✅ All TypeScript/ESLint errors fixed (`npm run lint`)
+- ✅ Production build tested (`npm run build && npm start`)
+- ✅ Security headers enabled (in `next.config.ts`)
+- ✅ Repository pushed to GitHub
+- ✅ Vercel project created & secrets configured
 
-This project is provided under the `MIT` license — update `LICENSE` as needed.
+## 🛠️ Environment Variables
 
-## Contact
+Copy `.env.example` to `.env.local` for local development:
 
-- GitHub: `https://github.com/NiteshChaudhari-exe`
-- If you want to display an email or socials, add them to the `Footer` component or this README.
+```bash
+NODE_ENV=production
+
+# Optional: Google Analytics
+# NEXT_PUBLIC_GA_ID=your-ga-id
+
+# Optional: Contact Form
+# CONTACT_FORM_EMAIL=your-email@example.com
+```
+
+## 📄 License
+
+MIT — See `LICENSE` file for details.
+
+## 🤝 Contributing
+
+Contributions welcome! Open issues or PRs with improvements.
+
+## 📧 Contact
+
+- **GitHub:** [NiteshChaudhari-exe](https://github.com/NiteshChaudhari-exe)
+- **Portfolio:** (Add live URL after deployment)
 
 ---
 
-If you'd like, I can also:
-
-- add a `LICENSE` file (`MIT`) and a `CONTRIBUTING.md`
-- generate a small demo screenshot and place it under `public/` and reference it in this README
-- add GitHub Action for linting and preview deployments
-
-Let me know which of the above you'd like me to do next.
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Last Updated:** December 2025 | **Status:** Production-Ready ✅

@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 // import { Link as ScrollLink } from "react-scroll";
 
-import profile from "@/public/profile.webp";
 import HeroImg from "@/public/hero.png";
 import Heroelm1 from "@/public/Hero-elm1.svg";
 import Heroelm2 from "@/public/Hero-elm2.svg";
@@ -147,3 +146,5 @@ and the discipline of a Shelby plan.
   </>
   )
 }
+
+export default Hero;
