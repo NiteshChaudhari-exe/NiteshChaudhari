@@ -109,7 +109,7 @@ export default function Navbar() {
     <div 
     className={`w-full transition-all duration-500 ${isFixed ? "fixed top-0 left-0 z-100 bg-(--bg-color) backdrop-blur-lg" : ""}` }
     >
-        <div className="flex items-center justify-between px-[8%] lg:px-[10%] py-5">
+        <div className="flex items-center justify-between px-[8%] lg:px-[12%] py-5">
             {/* LOGO */}
             <Link
             href="/"

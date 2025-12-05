@@ -38,8 +38,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Nitesh Chaudhari",
-  description: "Portfolio App",
+  title: "Nitesh Chaudhari — Portfolio",
+  description: "Full-stack developer portfolio showcasing projects, blogs, and professional experience",
+  icons: {
+    icon: "/logos/apple-touch-icon.png",
+    apple: "/logos/apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({
