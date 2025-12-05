@@ -2,7 +2,7 @@
 
 Modern, responsive portfolio built with Next.js (App Router) showcasing projects, blogs, and contact information.
 
-**Status:** ✅ Production-Ready for Deployment
+**Status:** [✅ Production-Ready for Deployment](https://niteshchaudhari.netlify.app/)
 
 **Badges:**
 

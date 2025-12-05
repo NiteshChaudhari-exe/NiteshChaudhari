@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   title: "Nitesh Chaudhari — Portfolio",
   description: "Full-stack developer portfolio showcasing projects, blogs, and professional experience",
   icons: {
-    icon: "/logos/apple-touch-icon.png",
+    icon: "/logos/android-chrome-192x192.png",
     apple: "/logos/apple-touch-icon.png",
   },
 };

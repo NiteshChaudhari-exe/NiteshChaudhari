@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+const PROJECT_VERSION = "0.1.0";
+
 export default function Footer() {
   return (
     <>
@@ -97,6 +99,13 @@ export default function Footer() {
                  </div>
              </div>
           </div>
+        </div>
+        {/* Footer Bottom with Version */}
+        <div className="mt-6 pt-6 border-t border-(--light-border) flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+         
+          <p className="text-(--text-light) text-sm mt-3 md:mt-0 ">
+            Version - <span className="text-(--prim-color) font-semibold">{PROJECT_VERSION}</span>
+          </p>
         </div>
       </div>
     </>
