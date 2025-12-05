@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
 import ClientLayoutWrapper from "./Components/ClientLayoutWrapper";
+import { GoogleAnalytics } from "./Components/GoogleAnalytics";
 
 const notoserif = Noto_Sans({
   variable: "--font-notoserif",
@@ -51,7 +52,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${notoserif.variable} ${merienda.variable} `}
       >
-        
+        <GoogleAnalytics />
         <Navbar/>
         {children}
         <Footer/>
