@@ -50,10 +50,7 @@ Available scripts (from `package.json`):
 - `npm start` — run production server after build
 - `npm run lint` — run linter (if configured)
 
-## Environment
 
-- If your project needs environment variables, create a `.env.local` at the repository root and add keys like `NEXT_PUBLIC_API_KEY=...`.
-- No required environment variables are included by default.
 
 ## Project Structure
 
@@ -91,7 +88,7 @@ This project is provided under the `MIT` license — update `LICENSE` as needed.
 
 ## Contact
 
-- GitHub: `https://github.com/NiteshChaudhari-exe/`
+- GitHub: `https://github.com/NiteshChaudhari-exe`
 - If you want to display an email or socials, add them to the `Footer` component or this README.
 
 ---
