@@ -86,15 +86,15 @@ export default function Footer() {
                 <div className="flex items-center gap-8">
                     <div className="hover:text-(--prim-color) transition cursor-pointer footer-link2">
                        <i className="bi bi-github"></i>
-                        GitHub
+                        <Link href="https://github.com/NiteshChaudhari-exe">GitHub</Link>
                     </div>
                     <div className="hover:text-(--prim-color) transition cursor-pointer footer-link2">
                        <i className="bi bi-linkedin"></i>
-                        LinkedIn
+                        <Link href="https://www.linkedin.com/in/chaudhariniteshraj/">LinkedIn</Link>
                     </div>
                     <div className="hover:text-(--prim-color) transition cursor-pointer footer-link2">
                        <i className="bi bi-instagram"></i>
-                        Instagram
+                        <Link href="https://www.instagram.com/oyee_nitesh__/?hl=en">Instagram</Link>
                     </div>
                  </div>
              </div>
