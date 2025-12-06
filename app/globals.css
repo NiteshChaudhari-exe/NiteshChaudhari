@@ -555,3 +555,24 @@ contact-form textarea:focus {
     left: 90% !important;
   }
 }
+
+/* Mobile menu: blur & shift background content */
+body.mobile-menu-open {
+ 
+  display: overflow;
+}
+
+body.mobile-menu-open #site-content {
+  filter: blur(6px);
+  transform: translateY(80px);
+  transition: filter 300ms ease, transform 300ms ease;
+  pointer-events: none;
+}
+
+@media (min-width: 1024px) {
+  body.mobile-menu-open #site-content {
+    filter: none;
+    transform: none;
+    pointer-events: auto;
+  }
+}

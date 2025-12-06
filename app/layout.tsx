@@ -6,6 +6,7 @@ import Footer from "./Components/Footer/Footer";
 import ClientLayoutWrapper from "./Components/ClientLayoutWrapper";
 import { GoogleAnalytics } from "./Components/GoogleAnalytics";
 import { LoadingPreview } from "./Components/LoadingPreview";
+import { ScrollToTop } from "./Components/ScrollToTop";
 
 const notoserif = Noto_Sans({
   variable: "--font-notoserif",
@@ -39,7 +40,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Nitesh Chaudhari — Portfolio",
+  title: "Nitesh Chaudhari— ",
   description: "Full-stack developer portfolio showcasing projects, blogs, and professional experience",
   icons: {
     icon: "/logos/android-chrome-192x192.png",
@@ -60,8 +61,13 @@ export default function RootLayout({
         <LoadingPreview />
         <GoogleAnalytics />
         <Navbar/>
-        {children}
-        <Footer/>
+
+        <div id="site-content">
+          {children}
+          <Footer/>
+        </div>
+
+        <ScrollToTop />
       
       </body>
     </html>

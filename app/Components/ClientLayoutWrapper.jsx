@@ -6,7 +6,7 @@ import Footer from "./Footer/Footer";
 export default function ClientLayoutWrapper({ childern }) {
     const pathname = usePathname ();
 
-    const hideNavbarRoutes = ["/Pages/Page404", "/404", "/login"];
+    const hideNavbarRoutes = ["/Pages/Page404", "/404"];
 
     const shouldHideNavbar = hideNavbarRoutes.some((route) => 
         pathname?.includes(route)

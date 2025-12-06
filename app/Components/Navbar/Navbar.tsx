@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 
 type NavLink ={
@@ -92,12 +92,38 @@ export default function Navbar() {
     }, [darkMode]);
 
     useEffect(() => {
-      const handleScroll = () => 
-        setIsFixed(window.scrollY > 50);
-      
+      const handleScroll = () => setIsFixed(window.scrollY > 50);
+
       window.addEventListener('scroll', handleScroll);
       return () => window.removeEventListener('scroll', handleScroll);
     }, []);
+
+    // Accessibility: close mobile menu on Escape and restore focus
+    const mobileMenuRef = useRef<HTMLDivElement | null>(null);
+    const hamburgerButtonRef = useRef<HTMLButtonElement | null>(null);
+
+    useEffect(() => {
+      const onKey = (e: KeyboardEvent) => {
+        if (e.key === 'Escape' && mobileMenuOpen) setMobileMenuOpen(false);
+      };
+      window.addEventListener('keydown', onKey);
+      return () => window.removeEventListener('keydown', onKey);
+    }, [mobileMenuOpen]);
+
+    // Toggle body class for blur & shift effect when mobile menu opens
+    useEffect(() => {
+      if (mobileMenuOpen) {
+        document.body.classList.add('mobile-menu-open');
+        document.body.style.overflow = '';
+      } else {
+        document.body.classList.remove('mobile-menu-open');
+        document.body.style.overflow = '';
+      }
+      return () => {
+        document.body.classList.remove('mobile-menu-open');
+        document.body.style.overflow = '';
+      };
+    }, [mobileMenuOpen]);
 
     const toggleDropdown = (label: string) => {
       setOpenDropdowns((prev) => (prev[label] ? {} : {[label]: true
@@ -167,27 +193,29 @@ export default function Navbar() {
                   aria-hidden="true"
                 ></i>
               </button>
-                <Link href="/UI-Components/Pages/Login">
-                <button className="btn nav-btn text-white font-medium px-4 py-2 rounded-md hover:opacity-90 transition">Log-In</button>
-                </Link>
+              
 
                 <button
+                  ref={hamburgerButtonRef}
                   onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                   className="lg:hidden text-(--white) text-2xl"
                   title={mobileMenuOpen ? "Close menu" : "Open menu"}
                   aria-label={mobileMenuOpen ? "Close mobile navigation" : "Open mobile navigation"}
+                  aria-expanded={mobileMenuOpen ? "true" : "false"}
+                  aria-controls="mobile-navigation"
                 >
-                  <i 
-                  className={`ri-${mobileMenuOpen ? "close-line" : "menu-3-line" }`}
-                  ></i>
+                  <i className={`ri-${mobileMenuOpen ? "close-line" : "menu-3-line" }`} aria-hidden />
                 </button>
              </div>
         </div>
         {/* Mobile Menu */}
-        <div 
-        className={`lg:hidden bg-(--bg-color) border-t border-gray-700 overflow-hidden transition-all duration-500 : 
-            ${mobileMenuOpen ? "max-h-[700px] opacity-100 py-4" : "max-h-0 opacity-0 py-0"}`}
-         >
+        <div
+          id="mobile-navigation"
+          ref={mobileMenuRef}
+          className={`lg:hidden bg-(--bg-color) border-t border-gray-700 overflow-hidden transition-all duration-500 ${
+            mobileMenuOpen ? "max-h-[700px] opacity-100 py-4" : "max-h-0 opacity-0 py-0"
+          }`}
+        >
           <div className="px-[8%] space-y-3">
             {navLinks.map((link) => (
               <div
@@ -224,9 +252,14 @@ export default function Navbar() {
                   </>
                 ) : (
                   <Link
-                   href={link.href}
-                   onClick={() => { setMobileMenuOpen(false); setOpenDropdowns({}); }}
-                   className="block px-4 py-3 text-white hover:text-(--prim-color)"
+                    href={link.href}
+                    onClick={() => {
+                      setMobileMenuOpen(false);
+                      setOpenDropdowns({});
+                      // restore focus to hamburger for accessibility
+                      hamburgerButtonRef.current?.focus();
+                    }}
+                    className="block px-4 py-3 text-white hover:text-(--prim-color)"
                   >
                     {link.label}
                   </Link>
