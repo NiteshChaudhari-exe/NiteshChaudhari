@@ -3,7 +3,6 @@
   "devCommand": "npm run dev",
   "installCommand": "npm ci",
   "framework": "nextjs",
-  "nodeVersion": "20.x",
   "env": {
     "NODE_ENV": {
       "value": "production"
