@@ -18,9 +18,9 @@ Modern, responsive portfolio built with Next.js (App Router) showcasing projects
 **Features**
 
 - Responsive design with modern layout
-- Project pages with details and JSON-driven content
-- Blog listing and post pages
-- Contact & auth pages (login/signup placeholders)
+- Project page with details and JSON-driven content
+- Blog listing and post page
+- Contact Page
 
 ## Tech Stack
 
@@ -38,8 +38,8 @@ Modern, responsive portfolio built with Next.js (App Router) showcasing projects
 ### Installation & Run
 
 ```powershell
-# Navigate to project
-cd C:\Users\chaud\OneDrive\Desktop\PORTFOLIO\niteshchaudhari1
+# Navigate to project 
+git clone https://github.com/NiteshChaudhari-exe/NiteshChaudhari.git
 
 # Install dependencies
 npm install
