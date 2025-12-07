@@ -4,9 +4,7 @@
   "installCommand": "npm ci",
   "framework": "nextjs",
   "env": {
-    "NODE_ENV": {
-      "value": "production"
-    }
+    "NODE_ENV": "production"
   },
   "headers": [
     {
