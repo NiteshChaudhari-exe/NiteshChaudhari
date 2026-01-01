@@ -157,7 +157,7 @@ Contributions welcome! Open issues or PRs with improvements.
 ## 📧 Contact
 
 - **GitHub:** [NiteshChaudhari-exe](https://github.com/NiteshChaudhari-exe)
-- **Portfolio:** (Add live URL after deployment)
+- **Portfolio:** [✅ Live Preview](https://nitesh-chaudhari.vercel.app/)
 
 ---
 
